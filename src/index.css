@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(30, 41, 59);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(51, 65, 85);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(59, 130, 246);
+}
+
+/* Estilos para el SVG generado por Graphviz */
+.graphviz-svg svg {
+    background: transparent !important;
+}
+
+.graphviz-svg text {
+    fill: #e2e8f0 !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+.graphviz-svg .node circle {
+    stroke-width: 1.5px !important;
+}
+
+.graphviz-svg .node polygon {
+    stroke-width: 1.5px !important;
+}
+
+.graphviz-svg .edge path {
+    stroke-width: 1.5px !important;
+}
+
+.graphviz-svg .edge polygon {
+    fill: #94a3b8 !important;
+    stroke: #94a3b8 !important;
+}
